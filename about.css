@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    background-color: rgb(78, 189, 233);
+}
+.title h1{
+    text-align: center;
+    padding-top: 90px ;
+    font-size: 42px;
+}
+.title h1::after{
+    content: "";
+    height: 4px;
+    width: 230px;
+    background-color: #000;
+    display: block;
+    margin: auto;
+}
+.title p{
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 50px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    
+}
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: purple;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: white;
+    transition: 0.4s ease;
+}
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.card h2{
+    font-size: 28px;
+    color:#000;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(168, 92, 200);
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.button.button:hover {
+    background-color: rgb(40, 151, 226);
+    transition: 0.4s ease;
+}
+.text-centre{
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width: 940px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width:85%;
+        display: flex;
+        margin: 20px 0px ;
+    }
+}

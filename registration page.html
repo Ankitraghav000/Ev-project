@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Registration </title>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">ECO friendly World </h1>
+          <nav class="navigation">
+              <a href="home page.html" target="_parent">Home</a>
+              <a href="About.html" target="_blank">About</a>
+              <a href="contactus.html" target="_blank">CONTACT US</a>
+              <button onclick="window.location.href='electricvehicleproject.html';"  class="btnlogin-popup">Login</button>
+          </nav>
+        </header>
+    <div class="container">
+        <form action="" method="post">
+            <h2>Registration</h2>
+            <div class="content">
+            <div class="input-box">
+                <label for="name"> Full Name</label>
+                <input type="text" placeholder="Enter full name" name="name" required>
+            </div>
+            <div class="input-box">
+                <label for="Phone">Phone No</label>
+                <input type="tel" placeholder="Phone No" name="Phone" required>
+            </div>
+            <div class="input-box">
+                <label for="email"> E-mail Id</label>
+                <input type="email" placeholder="Enter your vaild email address" name="email" required>
+            </div>
+            <div class="input-box">
+                <label for="Vehicle"> Vehicle No</label>
+                <input type="text" placeholder="Vehicle No" name="Vehicle" required>
+            </div>
+            <div class="input-box">
+                <label for="Engine"> Engine No</label>
+                <input type="text" placeholder="Engine No" name="Engine" required>
+            </div>
+            <div class="input-box">
+                <label for="password"> Password</label>
+                <input type="password" placeholder="Password" name="name" required>
+            </div>
+            <div class="input-box">
+                <label for="Confirm-password"> Confirm password</label>
+                <input type="password" placeholder=" Confirm Password" name="confirmpassword " required>
+            </div>
+            <span class="gender-title">Gender :</span>
+            <div class="gender-category">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+        <div class="alert">
+            <p>By clicking register , you agree to our <a href="#" target="_blank">Terms</a>,<a href="#"> Privacy Policy </a>  and <a href="#">cookies policy.</a> </p>
+        </div>
+        <div class="button-container">
+            <button>Register</button>
+        </div> 
+        </form>
+    </div>
+   </body>
